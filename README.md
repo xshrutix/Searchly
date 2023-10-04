@@ -1,8 +1,33 @@
-# React + Vite
+# Searchly Research Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Searchly Research Frontend is a React-based web application that allows users to search for research topics using the Bing search API. Users can input their desired research topic, view search suggestions, and access search results displayed in a visually appealing grid layout.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+
+
+## Features
+
+- Search for research topics.
+- View and click on search suggestions.
+- Display search results in a grid layout.
+- Access detailed information by clicking on search results.
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- Axios: A promise-based HTTP client for making HTTP requests.
+- RapidAPI: An API marketplace for accessing various APIs, used for auto-suggest and Bing search.
+- Picsum: A service for placeholder images, used for search result images.
+
+## Usage
+
+1. Clone the repository.
+2. Install the necessary dependencies by running `npm install`.
+3. Start the development server with `npm start`.
+4. Access the application through the provided URL.
+
+
