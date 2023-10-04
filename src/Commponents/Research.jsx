@@ -7,9 +7,11 @@ function ResearchFrontend() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
-  const apiUrl = 'https://bing-web-search1.p.rapidapi.com/search';
-  const autoSuggestApiUrl = 'https://auto-suggest-queries.p.rapidapi.com/suggestqueries';
-  const rapidApiKey = '60fb9d4bd5mshba0400e10cb5f50p19dcf2jsn65a94575677b';
+  const apiUrl = import.meta.env.VITE_BING_URL ;
+  const autoSuggestApiUrl = import.meta.env.VITE_AUTO_SUGGEST_URL ;
+  const rapidApiKey = import.meta.env.VITE_RAPID_API_KEY; 
+
+  console.log(apiUrl)
   const randomImageURL = 'https://picsum.photos/200/300';
 
   useEffect(() => {
@@ -24,7 +26,7 @@ function ResearchFrontend() {
       params: { query: searchTerm },
       headers: {
         'X-RapidAPI-Key': rapidApiKey,
-        'X-RapidAPI-Host': 'auto-suggest-queries.p.rapidapi.com',
+        'X-RapidAPI-Host': import.meta.env.VITE_AUTO_SUGGEST_HOST,
       },
     };
 
@@ -62,8 +64,8 @@ function ResearchFrontend() {
       },
       headers: {
         'X-BingApis-SDK': 'true',
-        'X-RapidAPI-Key': '60fb9d4bd5mshba0400e10cb5f50p19dcf2jsn65a94575677b',
-        'X-RapidAPI-Host': 'bing-web-search1.p.rapidapi.com',
+        'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY,
+        'X-RapidAPI-Host': import.meta.env.VITE_RAPID_API_HOST,
       },
     };
 
