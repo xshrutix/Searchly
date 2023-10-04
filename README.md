@@ -2,6 +2,8 @@
 
 Searchly Research Frontend is a React-based web application that allows users to search for research topics using the Bing search API. Users can input their desired research topic, view search suggestions, and access search results displayed in a visually appealing grid layout.
 
+## Demo
+[Live](https://research-searchly.netlify.app/)  
 ## Table of Contents
 
 - [Features](#features)
